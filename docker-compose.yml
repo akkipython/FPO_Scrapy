@@ -1,0 +1,7 @@
+version: '3'
+services:
+  scrapy:
+    build: .
+    volumes:
+      - ./zabuacrop:/app/zabuacrop
+    command: sh -c "cd zabuacrop && scrapy crawl Company_name"
